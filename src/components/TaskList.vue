@@ -24,13 +24,14 @@ const addTask = () => {
   <ul>
     <li v-for="task in notFinishedTasks" :key="task.name">
       <div>タスク名:{{ task.name }}</div>
-      <button @click="task.situation++">完了</button>
+      <button @click="task.situation++">完了にする</button>
     </li>
   </ul>
   <div>完了済タスク</div>
   <ul>
     <li v-for="task in finishedTasks" :key="task.name">
       <div>タスク名:{{ task.name }}</div>
+      <button @click="task.situation--">未完了にする</button>
     </li>
   </ul>
   <label>
