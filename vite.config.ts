@@ -12,5 +12,5 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   },
-base: '/{リポジトリ名}/' 
+base: '/{todolist_24take}/' 
 })
